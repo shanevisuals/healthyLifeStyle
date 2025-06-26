@@ -1,0 +1,411 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+    background-color: #E3DE62;
+}
+
+.container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section1 {
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+
+
+#slideShow-container {
+    text-align: center;
+}
+
+.prev {
+    margin-right: 3em;
+    
+}
+
+.next {
+    margin-left: 3em;
+   
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.recipeGallery {
+    background-color: #B3D9FF;
+    margin: auto;
+    width: auto;
+    max-width: 700px;
+}
+
+#nutritionInfo {
+    text-align: left;
+    margin-left: 0;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+.bmiCalculator {
+    background-color: #B3D9FF;
+    margin: auto;
+    width: auto;
+    max-width: 700px;
+    margin-top: 1em;
+}
+
+#bmiForm label, #bmiForm input, #bmiForm button{
+    display: block;
+    margin-bottom: 1em;
+    width: 20em;
+}
+
+#bmiForm {
+    display: block;
+}
+
+#bmiForm button {
+    width: 20.6em;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    max-width: 500px;
+}
+
+ul p {
+    text-align: left;
+    max-width: 500px;
+}
+
+li {
+    text-align: left;
+}
+
+.flex-container1 {
+    display: flex;
+    margin: 0;
+}
+
+.flex-container1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-container1 {
+    margin-left: 20px;
+}
+
+#imageDisplay {
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.list-item:hover {
+    color: #4CAF50;
+}
+
+.list-item:hover::before {
+    content: '\2022';
+    margin-right: 5px;
+}
+
+.list-item:hover::after {
+    content: '\2022';
+    margin-left: 5px;
+}
+
+#guidedMeditation, #stressManagement, #mindfullnessTools {
+    max-width: 900px;
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: left;
+    background-color: #B3D9FF;
+}
+
+.exercise {
+    background-color: #B3D9FF;
+    margin: auto;
+    width: auto;
+    max-width: 700px;
+}
+}
+
+.card {
+    width: 100%;
+}
+
+.logo {
+    height: 150px;
+    margin-right: 1em;
+}
+
+header {
+    position: relative;
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-image: url('../images/HeaderBackground.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    
+}
+
+#search {
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#search-button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+nav {
+    grid-column: span 12;
+    display: flex;
+    margin-right: 1em;;
+    background-color: #fbcf53;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    background-color: black;
+    color: #fbcf53;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#mainContent {
+    grid-column: span 12;
+    padding: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#mainContent p {
+    width: 40em;
+    text-align: center;
+    margin: auto;
+}
+
+.section2 {
+    background-color: white;
+}
+
+.card1, .card2, .card3 {
+    width: 100%; 
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card1 img, .card2 img, .card3 img {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 1em;
+    transition: transform 0.5s ease;
+}
+
+.card1:hover img, .card2:hover img, .card3:hover img {
+    transform: scale(1.1);
+}
+
+
+#topic1, #topic2, #topic3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.card1:hover #topic1, .card2:hover #topic2, .card3:hover #topic3 {
+    opacity: 1;
+}
+
+form {
+    padding: 1em;
+    background-color: white;
+    margin: auto;
+}
+
+#log-in {
+    max-width: 670px;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+}
+
+#registerationForm {
+    margin: auto;
+    max-width: 670px;
+}
+
+fieldset {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    width: 10em;
+    padding: 5px;
+    text-align: left;
+}
+
+.effect-input:hover {
+    background-color: #F4F4F4;
+}
+
+.effect-input:focus {
+    border-color: #5E9ED6;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px;
+}
+
+.button-container {
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    grid-column: span 12;
+    align-content: center;
+    display: flex;
+    background: orange;
+    color: black;
+    padding: 10px;
+}
+
+footer h3 {
+    text-align: left;
+}
+
+.copyright {
+    width: 20em;
+    padding-right: 1em;
+}
+
+.contactDetails {
+    width: 18em;
+}
+
+.sites {
+    width: 18em;
+}
+
+.sites img {
+    max-height: 3em;
+    margin-right: 1em;
+}
+
+footer a {
+    color: black;
+}
+
+/* for mobile */
+@media screen and (max-width:600px) {
+    #search-bar {
+        width: 100%;
+    }
+
+    #search {
+        max-width: 60%;
+    }
+
+    #search-button {
+        width: auto;
+        margin-right: 1em;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #guidedMeditation, #stressManagement, #mindfulnessTools {
+        width: 100%;
+        
+    }
+    
+    #guidedMeditation p, #stressManagement p, #mindfulnessTools p {
+        width: 400px;
+    }
+    
+}

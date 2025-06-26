@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <link rel="stylesheet" href="../CSS/mainCSS.css">
+        
+        <title>Delight In Balance</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="Java/mainJs.js.java"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    
+    <body>
+        
+        <div class="container">
+        
+            <div id="mainContent">
+
+                <header>
+                    
+                    <a href="../index.html"><img src="../images/mainLogo.PNG" alt="Delight In Balance" class="logo"></a>
+                    
+                    <nav>
+
+                        <a href="../index.html">Main Page</a>
+                        <a href="nutritousEating_Page2.html" class="active">Nutritious Eating</a>
+                        <a href="activeLiving_Page3.html">Active Living</a>
+                        <a href="Pages/mentalWellness_Page4.html">Mental Wellness</a>
+                        <a href="adminArea.html">Admin</a>
+                    
+                    </nav>
+
+                    <div id="search-bar">
+
+                        <input type="text" id="search" placeholder="Search....">
+                        <button type="button" id="search-button">Search</button>
+
+                    </div>
+                
+                </header>
+
+                <h1>Fuel Your Body with Nourishing Foods</h1>
+
+                <p>In this section, dive into the importance of mindful eating and explore the variety of delicious, nutritous recipes. Our responsive design ensures a seamless experience, whether your're accessing our content on a mobile, laptop, or desktop device.</p>
+                
+                <div class="recipeGallery">
+                    
+                    
+                    <h2>Recipe Gallery</h2>
+                
+                    <div id="slideShow-container">
+
+                    <div class="mySlides" id="slide1">
+
+                        <img src="../images/Chicken%20and%20Chorizo.webp" alt="Chicken and Chorizo Jambalaya" class="slides">
+
+                        <div class="recipeText">
+
+                            <h3>Chicken and Chorizo Jambalaya</h3>
+
+                            <p>A healthy Cajun-inspired rice pot recipe that's bursting with spicy Spanish sausage, sweet peppers and tomatoes</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mySlides" id="slide2">
+
+                        <img src="../images/Spiced%20Carrot.webp" alt="Spiced carrot & lentil soup" class="slides">
+
+                        <div class="recipeText">
+
+                            <h3>Spiced carrot & lentil soup</h3>
+
+                            <p>A delicious, spicy blend packed full of iron and low in fat to boot. It's ready in under half an hour, or can be made in a slow cooker</p>
+
+                        </div>
+                    </div>
+
+                    <div class="mySlides" id="slide3">
+
+                        <img src="../images/Chicken%20Noodl.webp" alt="Chicken Noodle Soup" class="slides">
+
+                        <div class="recipeText">
+
+                            <h3>Chicken Noodle Soup</h3>
+
+                            <p>Mary Cadogan's aromatic broth will warm you up on a winter's evening - it contains ginger, which is particularly good for colds.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mySlides" id="slide4">
+
+                        <img src="../images/root&Lentil.webp" alt="Spicy root and Lentil Casserole" class="slides">
+
+                        <div class="recipeText">
+
+                            <h3>Spicy root and Lentil Casserole</h3>
+
+                            <p>The potatoes in this recipe take on the spicy flavours beautifully - our idea of the perfect veggie supper</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mySlides" id="slide5">
+
+                        <img src="../images/Spinach.webp" alt="Spinach, sweet potato and Lentil dhal" class="slides">
+
+                        <div class="recipeText">
+
+                            <h3>Spinach, sweet potato and Lentil Dhal</h3>
+
+                            <p>A comforting vegan one-pot recipe that counts for 3 of your 5-a-day! You can't go wrong with this iron-rich, low-fat, low-calorie supper</p>
+
+                        </div>
+
+                    </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+
+
+
+                    </div>
+
+                    <h2>Nutritous Information</h2>
+
+                   <div id="nutritionInfo">
+
+
+
+                    </div>
+
+
+                </div>
+                
+                <div class="bmiCalculator">
+                    
+                <h2>BMI Calculator</h2>
+                    
+                <form id="bmiForm">
+                    
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" required>
+                    
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" required>
+                    
+                    <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+                    
+                    <p id="bmiResult"></p>
+                    
+                </form>
+                    
+            </div>
+                    
+                    
+                </div>
+
+                
+        
+            <footer>
+                
+                <div class="copyright">
+                    
+                    <h3>Copyright</h3>
+                    
+                    <p> <span id="copyright">&copy; 2023</span> Shane Bliss ¦ KNumber: K00288183 ¦ Last Updated: <span id="lastUpdated">November 20, 2023</span></p>
+                    
+                </div>
+                
+                <div class="contactDetails">
+                    
+                    <h3>Contact Deatils</h3>
+                    
+                    <p>Email: <a href="mailto:K00288183@student.tus.ue">K00288183@student.tus.ie</a></p>
+                    
+                </div>
+                
+            </footer>
+            
+            
+        </div>
+        
+         <script src="../Java/mainJs.java"></script>
+        
+    </body>
+</html>

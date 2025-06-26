@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <link rel="stylesheet" href="../CSS/mainCSS.css">
+        
+        <title>Delight In Balance</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="Java/mainJs.js.java"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        
+        <div class="container">
+        
+            <div id="mainContent">
+
+                <header>
+                    
+                     
+                    <a href="../index.html"><img src="../images/mainLogo.PNG" alt="Delight In Balance" class="logo"></a>
+
+                    <nav>
+
+                        <a href="../index.html">Main Page</a>
+                        <a href="nutritousEating_Page2.html">Nutritious Eating</a>
+                        <a href="activeLiving_Page3.html">Active Living</a>
+                        <a href="Pages/mentalWellness_Page4.html">Mental Wellness</a>
+                        <a href="adminArea.html" class="active">Admin</a>
+
+                    </nav>
+
+                    <div id="search-bar">
+
+                        <input type="text" id="search" placeholder="Search....">
+                        <button type="button" id="search-button">Search</button>
+
+                    </div>
+                
+                </header>
+                
+                <form class="productForm" onsubmit="addProduct(); return false;">
+                    
+                    <fieldset>
+                        
+                        <h2>Administration Area</h2>
+                    
+                    
+                        
+                        <label for="productName">Product name: </label>
+                        <input type="text" id="productName" name="productName" required>
+                        
+                        <label for="productPrice">Product price: </label>
+                        <input type="text" id="productPrice" name="productPrice" required>
+                        
+                        
+                        <button type="submit">Add Product</button>
+                        
+                        <table>
+                            
+                            <thread>
+                            
+                                <tr>
+                                
+                                    <th>Product name</th>
+                                    <th>Product price</th>
+                                    <th>Action</th>
+                            
+                                </tr>
+                        
+                            </thread>
+                        
+                            <tbody id="productTable">
+                            
+                            
+                            
+                            </tbody>
+                    
+                        </table>
+                        
+                        
+                    </fieldset>
+                    
+                    
+                </form>
+                
+                
+                <footer>
+
+            <div class="copyright">
+
+                <h3>Copyright</h3>
+
+                <p> <span id="copyright">&copy; 2023</span> Shane Bliss ¦ KNumber: K00288183 ¦ Last Updated: <span
+                        id="lastUpdated">November 20, 2023</span></p>
+
+            </div>
+
+            <div class="contactDetails">
+
+                <h3>Contact Details</h3>
+
+                <p>Email: <a href="mailto:K00288183@student.tus.ue">K00288183@student.tus.ie</a></p>
+                
+                <p>Phone No: ************</p>
+
+            </div>
+
+        </footer>
+            
+            </div>
+            
+        </div>
+        
+         <script src="../Java/mainJs.java"></script>
+        
+    </body>
+</html>
